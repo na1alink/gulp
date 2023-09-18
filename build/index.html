@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Стартовый шаблон</title>
+    <title>Travel Agent</title>
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./fonts/CircularStd/stylesheet.css" />
   </head>
@@ -42,7 +42,8 @@
 </div>
 
 
-    <main><section class="discover">
+    <main>
+      <section class="discover">
   <div class="container">
     <div class="discover__grid">
       <div class="discover__desc">
@@ -62,20 +63,23 @@
         </div>
         <div class="discover__form">
           <form action="" class="form">
-  <label for="" class="form__lable">
-    <span>Locations</span>
-    <input id="autoCompleteCountry" type="text" class="form__input" placeholder="e.g Bali, Indonesia" />
-  </label>
-  <div class="form_devider"></div>
-  <label for="" class="form__lable">
-    <span>Date and time</span>
-    <input id="datePicker" type="text" class="form__input" placeholder="MM/DD/YYYY" />
-  </label>
-  <button class="form__btn">
-    <img src="./img/icons/search-btn.svg" alt="Search" />
-  </button>
-</form>
 
+	<label for="" class="form__label">
+        <span>Locations</span>
+        <input id="autoCompleteCountry" name="country" type="text" class="form__input" placeholder="e.g Bali, Indonesia" autocomplete="off">
+    </label>
+
+	<div class="form__devider"></div>
+
+    <label for="" class="form__label">
+        <span>Date and time</span>
+        <input id="datePicket" name="date" type="text" class="form__input" placeholder="MM/DD/YYYY" autocomplete="off">
+    </label>
+
+	<button class="form__btn">
+		<img src="./img/icons/search-btn.svg" alt="Search" />
+	</button>
+</form>
         </div>
       </div>
 
@@ -83,31 +87,24 @@
         <div class="discover__picture-hint">
           <div class="hint-discover">
   <div class="hint-discover__picture">
-    <img
-      class="hint-discover__img"
-      src="./img/hints/coco-de-heaven.jpg"
-      alt="Hint"
-    />
+      <img class="hint-discover__img" src="./img/hints/coco-de-heaven.jpg" alt="Hint" >
   </div>
   <div class="hint-discover__desc">
-    <div class="hint-discover__title">
-      Coco De Heaven
-      <span class="hint-discover__rating"> (4.5) </span>
-    </div>
-    <div class="hint-discover__price">
-      <span class="muted">Starts from</span> <i>$</i>400
-    </div>
+      <div class="hint-discover__title">
+          Coco De Heaven
+          <span class="hint-discover__rating">
+              (4.5)
+          </span>
+      </div>
+      <div class="hint-discover__price"><span class="muted">Starts from</span> <i>$</i>400</div>
   </div>
 </div>
-
         </div>
 
         <div class="discover__picture-scroll">
           <div class="scroll-down">
-
     <img src="./img/icons/scroll-down-text.svg" alt="" class="scroll-down__text">
     <img src="./img/icons/scroll-down.svg" alt="" class="scroll-down__icon">
- 
 </div>
         </div>
 
@@ -120,10 +117,514 @@
     </div>
   </div>
 </section>
-</main>
+ <section class="partners">
+  <div class="container">
+    <div class="partners__row">
+      <h2 class="partners__title">Our Travel Partner</h2>
+      <div class="partners__content">
+        <img src="./img/partners/traveloka.svg" alt="Logo" />
+        <img src="./img/partners/airbnb.svg" alt="Logo" />
+        <img src="./img/partners/expedia.svg" alt="Logo" />
+        <img src="./img/partners/skyscanner.svg" alt="Logo" />
+        <img src="./img/partners/american-airlines.svg" alt="Logo" />
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="popular">
+  <div class="container">
+    <!-- popular__top -->
+    <div class="popular__top">
+      <div class="popular__title">
+        <h2 class="title-3">Popular Destinations</h2>
+        <div class="text">
+          <p>See our popular destinations that our client choose</p>
+        </div>
+      </div>
+
+      <div class="popular__controls">
+        <button id="popularPrev">
+          <img src="./img/icons/btn-back.svg" alt="Back" />
+        </button>
+        <button id="popularNext">
+          <img src="./img/icons/btn-next.svg" alt="Next" />
+        </button>
+      </div>
+    </div>
+    <!-- //popular__top -->
+  </div>
+  <div class="container-right">
+    <div class="popular__slider"><div class="swiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide"><div class="card">
+  <div class="card__img">
+    <img src="./img/popular/venice.jpg" alt="Photo" />
+  </div>
+
+  <div class="card__title-wrapper">
+    <h3 class="card__title">Venice, Italy</h3>
+    <div class="card__rating">(4.5)</div>
+  </div>
+
+  <div class="card__price">
+    Starts from <span><i>$</i>900</span>
+  </div>
+</div>
+</div>
+    <div class="swiper-slide"><div class="card">
+  <div class="card__img">
+    <img src="./img/popular/venice.jpg" alt="Photo" />
+  </div>
+
+  <div class="card__title-wrapper">
+    <h3 class="card__title">Venice, Italy</h3>
+    <div class="card__rating">(4.5)</div>
+  </div>
+
+  <div class="card__price">
+    Starts from <span><i>$</i>900</span>
+  </div>
+</div>
+</div>
+    <div class="swiper-slide"><div class="card">
+  <div class="card__img">
+    <img src="./img/popular/venice.jpg" alt="Photo" />
+  </div>
+
+  <div class="card__title-wrapper">
+    <h3 class="card__title">Venice, Italy</h3>
+    <div class="card__rating">(4.5)</div>
+  </div>
+
+  <div class="card__price">
+    Starts from <span><i>$</i>900</span>
+  </div>
+</div>
+</div>
+    <div class="swiper-slide"><div class="card">
+  <div class="card__img">
+    <img src="./img/popular/venice.jpg" alt="Photo" />
+  </div>
+
+  <div class="card__title-wrapper">
+    <h3 class="card__title">Venice, Italy</h3>
+    <div class="card__rating">(4.5)</div>
+  </div>
+
+  <div class="card__price">
+    Starts from <span><i>$</i>900</span>
+  </div>
+</div>
+</div>
+    <div class="swiper-slide"><div class="card">
+  <div class="card__img">
+    <img src="./img/popular/venice.jpg" alt="Photo" />
+  </div>
+
+  <div class="card__title-wrapper">
+    <h3 class="card__title">Venice, Italy</h3>
+    <div class="card__rating">(4.5)</div>
+  </div>
+
+  <div class="card__price">
+    Starts from <span><i>$</i>900</span>
+  </div>
+</div>
+</div>
+    <div class="swiper-slide"><div class="card">
+  <div class="card__img">
+    <img src="./img/popular/venice.jpg" alt="Photo" />
+  </div>
+
+  <div class="card__title-wrapper">
+    <h3 class="card__title">Venice, Italy</h3>
+    <div class="card__rating">(4.5)</div>
+  </div>
+
+  <div class="card__price">
+    Starts from <span><i>$</i>900</span>
+  </div>
+</div>
+</div>
+    <div class="swiper-slide"><div class="card">
+  <div class="card__img">
+    <img src="./img/popular/venice.jpg" alt="Photo" />
+  </div>
+
+  <div class="card__title-wrapper">
+    <h3 class="card__title">Venice, Italy</h3>
+    <div class="card__rating">(4.5)</div>
+  </div>
+
+  <div class="card__price">
+    Starts from <span><i>$</i>900</span>
+  </div>
+</div>
+</div>
+  </div>
+</div>
+</div>
+  </div>
+</section>
+ <section class="testimonials">
+    <div class="container">
+        <div class="testimonials__grid">
+            <div class="testimonials__col">
+                <div class="card-review">
+  <div class="card-review__rating">
+      <img src="./img/icons/star.svg" alt="Star">
+      <img src="./img/icons/star.svg" alt="Star">
+      <img src="./img/icons/star.svg" alt="Star">
+      <img src="./img/icons/star.svg" alt="Star">
+      <img src="./img/icons/star-off.svg" alt="Star">
+  </div>
+
+  <p class="card-review__text">
+      "Amazing experience! The travel website made booking our vacation a breeze. Everything was well-organized, and we had a fantastic time exploring new places. Highly recommend!"
+  </p>
+
+  <div class="card-review__author">
+      <div class="card-review__author-img">
+          <img src="./img/testimonials/04.jpg" alt="Photo">
+      </div>
+
+      <div class="card-review__author-title">
+          <h4 class="card-review__author-name">Nichole Edward</h4>
+          <p class="card-review__author-role">Travel Enthusiast</p>
+      </div>
+  </div>
+</div>
+                <div class="card-review">
+  <div class="card-review__rating">
+      <img src="./img/icons/star.svg" alt="Star">
+      <img src="./img/icons/star.svg" alt="Star">
+      <img src="./img/icons/star.svg" alt="Star">
+      <img src="./img/icons/star.svg" alt="Star">
+      <img src="./img/icons/star-off.svg" alt="Star">
+  </div>
+
+  <p class="card-review__text">
+      "Amazing experience! The travel website made booking our vacation a breeze. Everything was well-organized, and we had a fantastic time exploring new places. Highly recommend!"
+  </p>
+
+  <div class="card-review__author">
+      <div class="card-review__author-img">
+          <img src="./img/testimonials/04.jpg" alt="Photo">
+      </div>
+
+      <div class="card-review__author-title">
+          <h4 class="card-review__author-name">Nichole Edward</h4>
+          <p class="card-review__author-role">Travel Enthusiast</p>
+      </div>
+  </div>
+</div>
+                <div class="card-review">
+  <div class="card-review__rating">
+      <img src="./img/icons/star.svg" alt="Star">
+      <img src="./img/icons/star.svg" alt="Star">
+      <img src="./img/icons/star.svg" alt="Star">
+      <img src="./img/icons/star.svg" alt="Star">
+      <img src="./img/icons/star-off.svg" alt="Star">
+  </div>
+
+  <p class="card-review__text">
+      "Amazing experience! The travel website made booking our vacation a breeze. Everything was well-organized, and we had a fantastic time exploring new places. Highly recommend!"
+  </p>
+
+  <div class="card-review__author">
+      <div class="card-review__author-img">
+          <img src="./img/testimonials/04.jpg" alt="Photo">
+      </div>
+
+      <div class="card-review__author-title">
+          <h4 class="card-review__author-name">Nichole Edward</h4>
+          <p class="card-review__author-role">Travel Enthusiast</p>
+      </div>
+  </div>
+</div>
+                <div class="card-review">
+  <div class="card-review__rating">
+      <img src="./img/icons/star.svg" alt="Star">
+      <img src="./img/icons/star.svg" alt="Star">
+      <img src="./img/icons/star.svg" alt="Star">
+      <img src="./img/icons/star.svg" alt="Star">
+      <img src="./img/icons/star-off.svg" alt="Star">
+  </div>
+
+  <p class="card-review__text">
+      "Amazing experience! The travel website made booking our vacation a breeze. Everything was well-organized, and we had a fantastic time exploring new places. Highly recommend!"
+  </p>
+
+  <div class="card-review__author">
+      <div class="card-review__author-img">
+          <img src="./img/testimonials/04.jpg" alt="Photo">
+      </div>
+
+      <div class="card-review__author-title">
+          <h4 class="card-review__author-name">Nichole Edward</h4>
+          <p class="card-review__author-role">Travel Enthusiast</p>
+      </div>
+  </div>
+</div>
+            </div>
+            <div class="testimonials__col">
+                <div class="card-review">
+  <div class="card-review__rating">
+      <img src="./img/icons/star.svg" alt="Star">
+      <img src="./img/icons/star.svg" alt="Star">
+      <img src="./img/icons/star.svg" alt="Star">
+      <img src="./img/icons/star.svg" alt="Star">
+      <img src="./img/icons/star-off.svg" alt="Star">
+  </div>
+
+  <p class="card-review__text">
+      "Amazing experience! The travel website made booking our vacation a breeze. Everything was well-organized, and we had a fantastic time exploring new places. Highly recommend!"
+  </p>
+
+  <div class="card-review__author">
+      <div class="card-review__author-img">
+          <img src="./img/testimonials/04.jpg" alt="Photo">
+      </div>
+
+      <div class="card-review__author-title">
+          <h4 class="card-review__author-name">Nichole Edward</h4>
+          <p class="card-review__author-role">Travel Enthusiast</p>
+      </div>
+  </div>
+</div>
+                <div class="card-review">
+  <div class="card-review__rating">
+      <img src="./img/icons/star.svg" alt="Star">
+      <img src="./img/icons/star.svg" alt="Star">
+      <img src="./img/icons/star.svg" alt="Star">
+      <img src="./img/icons/star.svg" alt="Star">
+      <img src="./img/icons/star-off.svg" alt="Star">
+  </div>
+
+  <p class="card-review__text">
+      "Amazing experience! The travel website made booking our vacation a breeze. Everything was well-organized, and we had a fantastic time exploring new places. Highly recommend!"
+  </p>
+
+  <div class="card-review__author">
+      <div class="card-review__author-img">
+          <img src="./img/testimonials/04.jpg" alt="Photo">
+      </div>
+
+      <div class="card-review__author-title">
+          <h4 class="card-review__author-name">Nichole Edward</h4>
+          <p class="card-review__author-role">Travel Enthusiast</p>
+      </div>
+  </div>
+</div>
+                <div class="card-review">
+  <div class="card-review__rating">
+      <img src="./img/icons/star.svg" alt="Star">
+      <img src="./img/icons/star.svg" alt="Star">
+      <img src="./img/icons/star.svg" alt="Star">
+      <img src="./img/icons/star.svg" alt="Star">
+      <img src="./img/icons/star-off.svg" alt="Star">
+  </div>
+
+  <p class="card-review__text">
+      "Amazing experience! The travel website made booking our vacation a breeze. Everything was well-organized, and we had a fantastic time exploring new places. Highly recommend!"
+  </p>
+
+  <div class="card-review__author">
+      <div class="card-review__author-img">
+          <img src="./img/testimonials/04.jpg" alt="Photo">
+      </div>
+
+      <div class="card-review__author-title">
+          <h4 class="card-review__author-name">Nichole Edward</h4>
+          <p class="card-review__author-role">Travel Enthusiast</p>
+      </div>
+  </div>
+</div>
+                <div class="card-review">
+  <div class="card-review__rating">
+      <img src="./img/icons/star.svg" alt="Star">
+      <img src="./img/icons/star.svg" alt="Star">
+      <img src="./img/icons/star.svg" alt="Star">
+      <img src="./img/icons/star.svg" alt="Star">
+      <img src="./img/icons/star-off.svg" alt="Star">
+  </div>
+
+  <p class="card-review__text">
+      "Amazing experience! The travel website made booking our vacation a breeze. Everything was well-organized, and we had a fantastic time exploring new places. Highly recommend!"
+  </p>
+
+  <div class="card-review__author">
+      <div class="card-review__author-img">
+          <img src="./img/testimonials/04.jpg" alt="Photo">
+      </div>
+
+      <div class="card-review__author-title">
+          <h4 class="card-review__author-name">Nichole Edward</h4>
+          <p class="card-review__author-role">Travel Enthusiast</p>
+      </div>
+  </div>
+</div>
+            </div>
+            <div class="testimonials__col">
+                <div class="card-review">
+  <div class="card-review__rating">
+      <img src="./img/icons/star.svg" alt="Star">
+      <img src="./img/icons/star.svg" alt="Star">
+      <img src="./img/icons/star.svg" alt="Star">
+      <img src="./img/icons/star.svg" alt="Star">
+      <img src="./img/icons/star-off.svg" alt="Star">
+  </div>
+
+  <p class="card-review__text">
+      "Amazing experience! The travel website made booking our vacation a breeze. Everything was well-organized, and we had a fantastic time exploring new places. Highly recommend!"
+  </p>
+
+  <div class="card-review__author">
+      <div class="card-review__author-img">
+          <img src="./img/testimonials/04.jpg" alt="Photo">
+      </div>
+
+      <div class="card-review__author-title">
+          <h4 class="card-review__author-name">Nichole Edward</h4>
+          <p class="card-review__author-role">Travel Enthusiast</p>
+      </div>
+  </div>
+</div>
+                <div class="card-review">
+  <div class="card-review__rating">
+      <img src="./img/icons/star.svg" alt="Star">
+      <img src="./img/icons/star.svg" alt="Star">
+      <img src="./img/icons/star.svg" alt="Star">
+      <img src="./img/icons/star.svg" alt="Star">
+      <img src="./img/icons/star-off.svg" alt="Star">
+  </div>
+
+  <p class="card-review__text">
+      "Amazing experience! The travel website made booking our vacation a breeze. Everything was well-organized, and we had a fantastic time exploring new places. Highly recommend!"
+  </p>
+
+  <div class="card-review__author">
+      <div class="card-review__author-img">
+          <img src="./img/testimonials/04.jpg" alt="Photo">
+      </div>
+
+      <div class="card-review__author-title">
+          <h4 class="card-review__author-name">Nichole Edward</h4>
+          <p class="card-review__author-role">Travel Enthusiast</p>
+      </div>
+  </div>
+</div>
+                <div class="card-review">
+  <div class="card-review__rating">
+      <img src="./img/icons/star.svg" alt="Star">
+      <img src="./img/icons/star.svg" alt="Star">
+      <img src="./img/icons/star.svg" alt="Star">
+      <img src="./img/icons/star.svg" alt="Star">
+      <img src="./img/icons/star-off.svg" alt="Star">
+  </div>
+
+  <p class="card-review__text">
+      "Amazing experience! The travel website made booking our vacation a breeze. Everything was well-organized, and we had a fantastic time exploring new places. Highly recommend!"
+  </p>
+
+  <div class="card-review__author">
+      <div class="card-review__author-img">
+          <img src="./img/testimonials/04.jpg" alt="Photo">
+      </div>
+
+      <div class="card-review__author-title">
+          <h4 class="card-review__author-name">Nichole Edward</h4>
+          <p class="card-review__author-role">Travel Enthusiast</p>
+      </div>
+  </div>
+</div>
+                <div class="card-review">
+  <div class="card-review__rating">
+      <img src="./img/icons/star.svg" alt="Star">
+      <img src="./img/icons/star.svg" alt="Star">
+      <img src="./img/icons/star.svg" alt="Star">
+      <img src="./img/icons/star.svg" alt="Star">
+      <img src="./img/icons/star-off.svg" alt="Star">
+  </div>
+
+  <p class="card-review__text">
+      "Amazing experience! The travel website made booking our vacation a breeze. Everything was well-organized, and we had a fantastic time exploring new places. Highly recommend!"
+  </p>
+
+  <div class="card-review__author">
+      <div class="card-review__author-img">
+          <img src="./img/testimonials/04.jpg" alt="Photo">
+      </div>
+
+      <div class="card-review__author-title">
+          <h4 class="card-review__author-name">Nichole Edward</h4>
+          <p class="card-review__author-role">Travel Enthusiast</p>
+      </div>
+  </div>
+</div>
+            </div>
+        </div>
+    </div>
+</section>
+      <section class="subscribe">
+	<div class="container">
+		<div class="subscribe__row">
+			<div class="subscribe__desc">
+				<h4 class="subscribe__title">
+					Join our newsletter to stay up to date
+				</h4>
+				<p class="subscribe__text">Stay connected with our brand</p>
+			</div>
+			<div class="subscribe__form">
+                <form action="" class="subscribe-form">
+                    <input type="email" class="subscribe-form__input" placeholder="Enter your email" autocomplete="false">
+                    <button class="subscribe-form__btn">Subscribe</button>
+                </form>
+            </div>
+		</div>
+	</div>
+</section>
+    </main>
     <footer class="footer">
 	<div class="container">
-		<h2>Footer</h2>
+		<div class="footer__row">
+			<div class="footer__copyright">
+				<div class="footer__logo">
+					<img src="./img/icons/logo.svg" alt="Logo" />
+				</div>
+				<div class="footer__copyright-text">
+
+					<p>
+						Wanderlust meets wander well – Experience seamless travel
+						with our services.
+					</p>
+				</div>
+			</div>
+
+			<div class="footer__nav">
+
+				<div class="footer-nav">
+					<h4 class="footer-nav__title">Company</h4>
+					<ul class="footer-nav__list">
+						<li><a href="#">About Us</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">Customers</a></li>
+						<li><a href="#">Packages</a></li>
+						<li><a href="#">Community</a></li>
+					</ul>
+				</div>
+
+				<div class="footer-nav">
+					<h4 class="footer-nav__title">Help</h4>
+					<ul class="footer-nav__list">
+						<li><a href="#">Support</a></li>
+						<li><a href="#">FAQs</a></li>
+						<li><a href="#">Refund Policy</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
 	</div>
 </footer>
 

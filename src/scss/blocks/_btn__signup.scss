@@ -8,7 +8,7 @@
   height: 40px;
 
   border-radius: 8px;
-  border: 1px solid #b7b7b7;
+  border: 1px solid #B7B7B7;
   background: #181818;
 
   color: #fff;
@@ -17,10 +17,9 @@
   font-weight: 450;
   line-height: 150%; /* 24px */
 
-  transition: opacity 0.2s ease-in;
+  transition: background-color 0.2s ease-in, color 0.2s ease-in, opacity 0.2s ease-in;
 }
 
-.btn-signup:hover,
-.btn-signup:focus {
+.btn-signup:hover, .btn-signup:focus {
   opacity: 0.8;
 }
